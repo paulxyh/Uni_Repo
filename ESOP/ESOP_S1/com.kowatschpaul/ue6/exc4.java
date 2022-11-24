@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class exc4 {
     public static void main(String[] args){
-        int[][] myMatrix = {{1,2,3,4},{17,9,5,6},{1,1,1,1},{7,6,5,4}};
+        int[][] myMatrix = {{6}, {4}};
         int[] diagonal = getDiagonal(myMatrix);
         System.out.println(Arrays.toString(diagonal));
     }
@@ -13,7 +13,7 @@ public class exc4 {
         if(isRectangular(matrix)){
             result = new int[matrix[0].length];
             for(int i = 0; i < matrix.length; i++){
-                result = matrix[i];
+                result[i] = matrix[i][i];
             }
         }
         return result;
@@ -21,7 +21,7 @@ public class exc4 {
     static boolean isRectangular(int[][] arr) {
         boolean bool = true;
         if (arr != null){
-            if(arr.length != 0){
+            if(arr.length != 0 && arr.length == arr[0].length){
                 int size = arr[0].length;
                 for (int i = 0; i < arr.length; i++) {
                     if (arr[i].length != size) {
@@ -29,6 +29,9 @@ public class exc4 {
                         break;
                     }
                 }
+            }
+            else{
+                bool = false;
             }
         }
         else{
