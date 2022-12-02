@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class exc4 {
     public static void main(String[] args){
-        int[][] myMatrix = {{6}, {4}};
+        int[][] myMatrix = {{1,2,3}, {4,5,6}, {7,8,9}};
         int[] diagonal = getDiagonal(myMatrix);
         System.out.println(Arrays.toString(diagonal));
     }
