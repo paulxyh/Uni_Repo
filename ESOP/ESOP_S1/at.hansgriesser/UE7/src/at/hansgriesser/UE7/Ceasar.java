@@ -22,6 +22,7 @@ public class Ceasar {
         System.out.println("encoded: " + encoded);
         System.out.println("decoded: " + decoded);
 
+        sc.close();
     }
 
     static String encode(String s, int key) {

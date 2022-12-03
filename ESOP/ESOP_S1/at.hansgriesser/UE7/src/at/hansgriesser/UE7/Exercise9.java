@@ -8,6 +8,7 @@ public class Exercise9 {
         String input = in.nextLine();
 
         System.out.println(convertToMorseCode(input));
+        in.close();
     }
 
     /**

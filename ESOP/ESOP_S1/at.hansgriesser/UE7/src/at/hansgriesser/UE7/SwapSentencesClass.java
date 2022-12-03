@@ -9,7 +9,7 @@ public class SwapSentencesClass {
         String input = in.nextLine();
 
         swapSentences(input);
-        
+        in.close();
     }
 
     static void swapSentences(String input) {
