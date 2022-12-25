@@ -1,6 +1,6 @@
 public class exc42 {
     public static void main(String[] args) {
-        boolean generator = false;
+        /*boolean generator = false;
         int gen_number = 0;
         int prime = 107377;
         while(!generator) {
@@ -16,10 +16,11 @@ public class exc42 {
             }
             else
                 prime++;
-        }
+        }*/
+        System.out.println(is_generator(100002, 150001));
         System.out.println("--------");
         System.out.println("--------");
-        System.out.println(gen_number + " ist ein Generator für " + prime);
+        //System.out.println(gen_number + " ist ein Generator für " + prime);
     }
 
     public static boolean is_generator(int gen, int prime){
